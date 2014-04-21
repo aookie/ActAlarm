@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD8D2267190559CD00262368 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8D2266190559CD00262368 /* Foundation.framework */; };
+		CD8D2269190559CD00262368 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8D2268190559CD00262368 /* CoreGraphics.framework */; };
+		CD8D226B190559CD00262368 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8D226A190559CD00262368 /* UIKit.framework */; };
+		CD8D2271190559CD00262368 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD8D226F190559CD00262368 /* InfoPlist.strings */; };
+		CD8D2273190559CD00262368 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8D2272190559CD00262368 /* main.m */; };
+		CD8D2277190559CD00262368 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8D2276190559CD00262368 /* AppDelegate.m */; };
+		CD8D227D190559CD00262368 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8D227C190559CD00262368 /* ViewController.m */; };
+		CD8D227F190559CD00262368 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8D227E190559CD00262368 /* Images.xcassets */; };
+		CD8D2286190559CD00262368 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8D2285190559CD00262368 /* XCTest.framework */; };
+		CD8D2287190559CD00262368 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8D2266190559CD00262368 /* Foundation.framework */; };
+		CD8D2288190559CD00262368 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8D226A190559CD00262368 /* UIKit.framework */; };
+		CD8D2290190559CD00262368 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD8D228E190559CD00262368 /* InfoPlist.strings */; };
+		CD8D2292190559CD00262368 /* ActAlarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8D2291190559CD00262368 /* ActAlarmTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD8D2289190559CD00262368 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD8D225B190559CD00262368 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD8D2262190559CD00262368;
+			remoteInfo = ActAlarm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD8D2263190559CD00262368 /* ActAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8D2266190559CD00262368 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD8D2268190559CD00262368 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CD8D226A190559CD00262368 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CD8D226E190559CD00262368 /* ActAlarm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ActAlarm-Info.plist"; sourceTree = "<group>"; };
+		CD8D2270190559CD00262368 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD8D2272190559CD00262368 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD8D2274190559CD00262368 /* ActAlarm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ActAlarm-Prefix.pch"; sourceTree = "<group>"; };
+		CD8D2275190559CD00262368 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD8D2276190559CD00262368 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD8D227B190559CD00262368 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CD8D227C190559CD00262368 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD8D227E190559CD00262368 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD8D2284190559CD00262368 /* ActAlarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActAlarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8D2285190559CD00262368 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CD8D228D190559CD00262368 /* ActAlarmTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ActAlarmTests-Info.plist"; sourceTree = "<group>"; };
+		CD8D228F190559CD00262368 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD8D2291190559CD00262368 /* ActAlarmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActAlarmTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD8D2260190559CD00262368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8D2269190559CD00262368 /* CoreGraphics.framework in Frameworks */,
+				CD8D226B190559CD00262368 /* UIKit.framework in Frameworks */,
+				CD8D2267190559CD00262368 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8D2281190559CD00262368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8D2286190559CD00262368 /* XCTest.framework in Frameworks */,
+				CD8D2288190559CD00262368 /* UIKit.framework in Frameworks */,
+				CD8D2287190559CD00262368 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD8D225A190559CD00262368 = {
+			isa = PBXGroup;
+			children = (
+				CD8D226C190559CD00262368 /* ActAlarm */,
+				CD8D228B190559CD00262368 /* ActAlarmTests */,
+				CD8D2265190559CD00262368 /* Frameworks */,
+				CD8D2264190559CD00262368 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD8D2264190559CD00262368 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD8D2263190559CD00262368 /* ActAlarm.app */,
+				CD8D2284190559CD00262368 /* ActAlarmTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD8D2265190559CD00262368 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD8D2266190559CD00262368 /* Foundation.framework */,
+				CD8D2268190559CD00262368 /* CoreGraphics.framework */,
+				CD8D226A190559CD00262368 /* UIKit.framework */,
+				CD8D2285190559CD00262368 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD8D226C190559CD00262368 /* ActAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				CD8D2275190559CD00262368 /* AppDelegate.h */,
+				CD8D2276190559CD00262368 /* AppDelegate.m */,
+				CD8D227B190559CD00262368 /* ViewController.h */,
+				CD8D227C190559CD00262368 /* ViewController.m */,
+				CD8D227E190559CD00262368 /* Images.xcassets */,
+				CD8D226D190559CD00262368 /* Supporting Files */,
+			);
+			path = ActAlarm;
+			sourceTree = "<group>";
+		};
+		CD8D226D190559CD00262368 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD8D226E190559CD00262368 /* ActAlarm-Info.plist */,
+				CD8D226F190559CD00262368 /* InfoPlist.strings */,
+				CD8D2272190559CD00262368 /* main.m */,
+				CD8D2274190559CD00262368 /* ActAlarm-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD8D228B190559CD00262368 /* ActAlarmTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD8D2291190559CD00262368 /* ActAlarmTests.m */,
+				CD8D228C190559CD00262368 /* Supporting Files */,
+			);
+			path = ActAlarmTests;
+			sourceTree = "<group>";
+		};
+		CD8D228C190559CD00262368 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD8D228D190559CD00262368 /* ActAlarmTests-Info.plist */,
+				CD8D228E190559CD00262368 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD8D2262190559CD00262368 /* ActAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8D2295190559CD00262368 /* Build configuration list for PBXNativeTarget "ActAlarm" */;
+			buildPhases = (
+				CD8D225F190559CD00262368 /* Sources */,
+				CD8D2260190559CD00262368 /* Frameworks */,
+				CD8D2261190559CD00262368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActAlarm;
+			productName = ActAlarm;
+			productReference = CD8D2263190559CD00262368 /* ActAlarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD8D2283190559CD00262368 /* ActAlarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8D2298190559CD00262368 /* Build configuration list for PBXNativeTarget "ActAlarmTests" */;
+			buildPhases = (
+				CD8D2280190559CD00262368 /* Sources */,
+				CD8D2281190559CD00262368 /* Frameworks */,
+				CD8D2282190559CD00262368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD8D228A190559CD00262368 /* PBXTargetDependency */,
+			);
+			name = ActAlarmTests;
+			productName = ActAlarmTests;
+			productReference = CD8D2284190559CD00262368 /* ActAlarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD8D225B190559CD00262368 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = externalight;
+				TargetAttributes = {
+					CD8D2283190559CD00262368 = {
+						TestTargetID = CD8D2262190559CD00262368;
+					};
+				};
+			};
+			buildConfigurationList = CD8D225E190559CD00262368 /* Build configuration list for PBXProject "ActAlarm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD8D225A190559CD00262368;
+			productRefGroup = CD8D2264190559CD00262368 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD8D2262190559CD00262368 /* ActAlarm */,
+				CD8D2283190559CD00262368 /* ActAlarmTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD8D2261190559CD00262368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8D227F190559CD00262368 /* Images.xcassets in Resources */,
+				CD8D2271190559CD00262368 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8D2282190559CD00262368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8D2290190559CD00262368 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD8D225F190559CD00262368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8D227D190559CD00262368 /* ViewController.m in Sources */,
+				CD8D2277190559CD00262368 /* AppDelegate.m in Sources */,
+				CD8D2273190559CD00262368 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8D2280190559CD00262368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8D2292190559CD00262368 /* ActAlarmTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD8D228A190559CD00262368 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD8D2262190559CD00262368 /* ActAlarm */;
+			targetProxy = CD8D2289190559CD00262368 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD8D226F190559CD00262368 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD8D2270190559CD00262368 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CD8D228E190559CD00262368 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD8D228F190559CD00262368 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD8D2293190559CD00262368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD8D2294190559CD00262368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD8D2296190559CD00262368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ActAlarm/ActAlarm-Prefix.pch";
+				INFOPLIST_FILE = "ActAlarm/ActAlarm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CD8D2297190559CD00262368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ActAlarm/ActAlarm-Prefix.pch";
+				INFOPLIST_FILE = "ActAlarm/ActAlarm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CD8D2299190559CD00262368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ActAlarm.app/ActAlarm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ActAlarm/ActAlarm-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ActAlarmTests/ActAlarmTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CD8D229A190559CD00262368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ActAlarm.app/ActAlarm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ActAlarm/ActAlarm-Prefix.pch";
+				INFOPLIST_FILE = "ActAlarmTests/ActAlarmTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD8D225E190559CD00262368 /* Build configuration list for PBXProject "ActAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8D2293190559CD00262368 /* Debug */,
+				CD8D2294190559CD00262368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8D2295190559CD00262368 /* Build configuration list for PBXNativeTarget "ActAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8D2296190559CD00262368 /* Debug */,
+				CD8D2297190559CD00262368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD8D2298190559CD00262368 /* Build configuration list for PBXNativeTarget "ActAlarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8D2299190559CD00262368 /* Debug */,
+				CD8D229A190559CD00262368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD8D225B190559CD00262368 /* Project object */;
+}
