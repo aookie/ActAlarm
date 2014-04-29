@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDADEF9F190FECAD005C558A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDADEF9E190FECAD005C558A /* Foundation.framework */; };
+		CDADEFA1190FECAD005C558A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDADEFA0190FECAD005C558A /* CoreGraphics.framework */; };
+		CDADEFA3190FECAD005C558A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDADEFA2190FECAD005C558A /* UIKit.framework */; };
+		CDADEFA9190FECAD005C558A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDADEFA7190FECAD005C558A /* InfoPlist.strings */; };
+		CDADEFAB190FECAD005C558A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDADEFAA190FECAD005C558A /* main.m */; };
+		CDADEFAF190FECAD005C558A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDADEFAE190FECAD005C558A /* AppDelegate.m */; };
+		CDADEFB2190FECAD005C558A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDADEFB0190FECAD005C558A /* Main.storyboard */; };
+		CDADEFB5190FECAD005C558A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDADEFB4190FECAD005C558A /* ViewController.m */; };
+		CDADEFB7190FECAD005C558A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDADEFB6190FECAD005C558A /* Images.xcassets */; };
+		CDADEFBE190FECAD005C558A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDADEFBD190FECAD005C558A /* XCTest.framework */; };
+		CDADEFBF190FECAD005C558A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDADEF9E190FECAD005C558A /* Foundation.framework */; };
+		CDADEFC0190FECAD005C558A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDADEFA2190FECAD005C558A /* UIKit.framework */; };
+		CDADEFC8190FECAD005C558A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDADEFC6190FECAD005C558A /* InfoPlist.strings */; };
+		CDADEFCA190FECAD005C558A /* ActAlarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDADEFC9190FECAD005C558A /* ActAlarmTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDADEFC1190FECAD005C558A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDADEF93190FECAD005C558A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDADEF9A190FECAD005C558A;
+			remoteInfo = ActAlarm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDADEF9B190FECAD005C558A /* ActAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDADEF9E190FECAD005C558A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CDADEFA0190FECAD005C558A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CDADEFA2190FECAD005C558A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CDADEFA6190FECAD005C558A /* ActAlarm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ActAlarm-Info.plist"; sourceTree = "<group>"; };
+		CDADEFA8190FECAD005C558A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDADEFAA190FECAD005C558A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDADEFAC190FECAD005C558A /* ActAlarm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ActAlarm-Prefix.pch"; sourceTree = "<group>"; };
+		CDADEFAD190FECAD005C558A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CDADEFAE190FECAD005C558A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CDADEFB1190FECAD005C558A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDADEFB3190FECAD005C558A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CDADEFB4190FECAD005C558A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CDADEFB6190FECAD005C558A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CDADEFBC190FECAD005C558A /* ActAlarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActAlarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDADEFBD190FECAD005C558A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CDADEFC5190FECAD005C558A /* ActAlarmTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ActAlarmTests-Info.plist"; sourceTree = "<group>"; };
+		CDADEFC7190FECAD005C558A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDADEFC9190FECAD005C558A /* ActAlarmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActAlarmTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDADEF98190FECAD005C558A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDADEFA1190FECAD005C558A /* CoreGraphics.framework in Frameworks */,
+				CDADEFA3190FECAD005C558A /* UIKit.framework in Frameworks */,
+				CDADEF9F190FECAD005C558A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDADEFB9190FECAD005C558A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDADEFBE190FECAD005C558A /* XCTest.framework in Frameworks */,
+				CDADEFC0190FECAD005C558A /* UIKit.framework in Frameworks */,
+				CDADEFBF190FECAD005C558A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDADEF92190FECAD005C558A = {
+			isa = PBXGroup;
+			children = (
+				CDADEFA4190FECAD005C558A /* ActAlarm */,
+				CDADEFC3190FECAD005C558A /* ActAlarmTests */,
+				CDADEF9D190FECAD005C558A /* Frameworks */,
+				CDADEF9C190FECAD005C558A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDADEF9C190FECAD005C558A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDADEF9B190FECAD005C558A /* ActAlarm.app */,
+				CDADEFBC190FECAD005C558A /* ActAlarmTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDADEF9D190FECAD005C558A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDADEF9E190FECAD005C558A /* Foundation.framework */,
+				CDADEFA0190FECAD005C558A /* CoreGraphics.framework */,
+				CDADEFA2190FECAD005C558A /* UIKit.framework */,
+				CDADEFBD190FECAD005C558A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDADEFA4190FECAD005C558A /* ActAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				CDADEFAD190FECAD005C558A /* AppDelegate.h */,
+				CDADEFAE190FECAD005C558A /* AppDelegate.m */,
+				CDADEFB0190FECAD005C558A /* Main.storyboard */,
+				CDADEFB3190FECAD005C558A /* ViewController.h */,
+				CDADEFB4190FECAD005C558A /* ViewController.m */,
+				CDADEFB6190FECAD005C558A /* Images.xcassets */,
+				CDADEFA5190FECAD005C558A /* Supporting Files */,
+			);
+			path = ActAlarm;
+			sourceTree = "<group>";
+		};
+		CDADEFA5190FECAD005C558A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDADEFA6190FECAD005C558A /* ActAlarm-Info.plist */,
+				CDADEFA7190FECAD005C558A /* InfoPlist.strings */,
+				CDADEFAA190FECAD005C558A /* main.m */,
+				CDADEFAC190FECAD005C558A /* ActAlarm-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDADEFC3190FECAD005C558A /* ActAlarmTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDADEFC9190FECAD005C558A /* ActAlarmTests.m */,
+				CDADEFC4190FECAD005C558A /* Supporting Files */,
+			);
+			path = ActAlarmTests;
+			sourceTree = "<group>";
+		};
+		CDADEFC4190FECAD005C558A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDADEFC5190FECAD005C558A /* ActAlarmTests-Info.plist */,
+				CDADEFC6190FECAD005C558A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDADEF9A190FECAD005C558A /* ActAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDADEFCD190FECAD005C558A /* Build configuration list for PBXNativeTarget "ActAlarm" */;
+			buildPhases = (
+				CDADEF97190FECAD005C558A /* Sources */,
+				CDADEF98190FECAD005C558A /* Frameworks */,
+				CDADEF99190FECAD005C558A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActAlarm;
+			productName = ActAlarm;
+			productReference = CDADEF9B190FECAD005C558A /* ActAlarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDADEFBB190FECAD005C558A /* ActAlarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDADEFD0190FECAD005C558A /* Build configuration list for PBXNativeTarget "ActAlarmTests" */;
+			buildPhases = (
+				CDADEFB8190FECAD005C558A /* Sources */,
+				CDADEFB9190FECAD005C558A /* Frameworks */,
+				CDADEFBA190FECAD005C558A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDADEFC2190FECAD005C558A /* PBXTargetDependency */,
+			);
+			name = ActAlarmTests;
+			productName = ActAlarmTests;
+			productReference = CDADEFBC190FECAD005C558A /* ActAlarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDADEF93190FECAD005C558A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = externalight;
+				TargetAttributes = {
+					CDADEFBB190FECAD005C558A = {
+						TestTargetID = CDADEF9A190FECAD005C558A;
+					};
+				};
+			};
+			buildConfigurationList = CDADEF96190FECAD005C558A /* Build configuration list for PBXProject "ActAlarm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDADEF92190FECAD005C558A;
+			productRefGroup = CDADEF9C190FECAD005C558A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDADEF9A190FECAD005C558A /* ActAlarm */,
+				CDADEFBB190FECAD005C558A /* ActAlarmTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDADEF99190FECAD005C558A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDADEFB7190FECAD005C558A /* Images.xcassets in Resources */,
+				CDADEFA9190FECAD005C558A /* InfoPlist.strings in Resources */,
+				CDADEFB2190FECAD005C558A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDADEFBA190FECAD005C558A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDADEFC8190FECAD005C558A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDADEF97190FECAD005C558A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDADEFB5190FECAD005C558A /* ViewController.m in Sources */,
+				CDADEFAF190FECAD005C558A /* AppDelegate.m in Sources */,
+				CDADEFAB190FECAD005C558A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDADEFB8190FECAD005C558A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDADEFCA190FECAD005C558A /* ActAlarmTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDADEFC2190FECAD005C558A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDADEF9A190FECAD005C558A /* ActAlarm */;
+			targetProxy = CDADEFC1190FECAD005C558A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDADEFA7190FECAD005C558A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDADEFA8190FECAD005C558A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CDADEFB0190FECAD005C558A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDADEFB1190FECAD005C558A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDADEFC6190FECAD005C558A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDADEFC7190FECAD005C558A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDADEFCB190FECAD005C558A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CDADEFCC190FECAD005C558A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDADEFCE190FECAD005C558A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ActAlarm/ActAlarm-Prefix.pch";
+				INFOPLIST_FILE = "ActAlarm/ActAlarm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CDADEFCF190FECAD005C558A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ActAlarm/ActAlarm-Prefix.pch";
+				INFOPLIST_FILE = "ActAlarm/ActAlarm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CDADEFD1190FECAD005C558A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ActAlarm.app/ActAlarm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ActAlarm/ActAlarm-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ActAlarmTests/ActAlarmTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CDADEFD2190FECAD005C558A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ActAlarm.app/ActAlarm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ActAlarm/ActAlarm-Prefix.pch";
+				INFOPLIST_FILE = "ActAlarmTests/ActAlarmTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDADEF96190FECAD005C558A /* Build configuration list for PBXProject "ActAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDADEFCB190FECAD005C558A /* Debug */,
+				CDADEFCC190FECAD005C558A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDADEFCD190FECAD005C558A /* Build configuration list for PBXNativeTarget "ActAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDADEFCE190FECAD005C558A /* Debug */,
+				CDADEFCF190FECAD005C558A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CDADEFD0190FECAD005C558A /* Build configuration list for PBXNativeTarget "ActAlarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDADEFD1190FECAD005C558A /* Debug */,
+				CDADEFD2190FECAD005C558A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDADEF93190FECAD005C558A /* Project object */;
+}

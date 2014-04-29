@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E4ED2F3E-78D9-4531-9750-6D8C174966F2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ActAlarm</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D504A488-60ED-4075-93DB-BDE452BAA487</key>
+		<string>https://github.com/externalight/ActAlarm.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ActAlarm.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D504A488-60ED-4075-93DB-BDE452BAA487</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/externalight/ActAlarm.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D504A488-60ED-4075-93DB-BDE452BAA487</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D504A488-60ED-4075-93DB-BDE452BAA487</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ActAlarm</string>
+		</dict>
+	</array>
+</dict>
+</plist>
