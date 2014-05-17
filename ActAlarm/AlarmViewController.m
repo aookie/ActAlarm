@@ -6,13 +6,13 @@
 //  Copyright (c) 2014年 externalight. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "AlarmViewController.h"
 
-@interface ViewController ()
+@interface AlarmViewController ()
 
 @end
 
-@implementation ViewController
+@implementation AlarmViewController
 
 - (void)viewDidLoad
 {

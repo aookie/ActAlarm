@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD722C6A1926FF900083C23C /* AlarmSettingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD722C691926FF900083C23C /* AlarmSettingListViewController.m */; };
+		CD722C6D1926FF9C0083C23C /* AlarmCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD722C6C1926FF9C0083C23C /* AlarmCreateViewController.m */; };
 		CDADEF9F190FECAD005C558A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDADEF9E190FECAD005C558A /* Foundation.framework */; };
 		CDADEFA1190FECAD005C558A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDADEFA0190FECAD005C558A /* CoreGraphics.framework */; };
 		CDADEFA3190FECAD005C558A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDADEFA2190FECAD005C558A /* UIKit.framework */; };
@@ -14,13 +16,14 @@
 		CDADEFAB190FECAD005C558A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDADEFAA190FECAD005C558A /* main.m */; };
 		CDADEFAF190FECAD005C558A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDADEFAE190FECAD005C558A /* AppDelegate.m */; };
 		CDADEFB2190FECAD005C558A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDADEFB0190FECAD005C558A /* Main.storyboard */; };
-		CDADEFB5190FECAD005C558A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDADEFB4190FECAD005C558A /* ViewController.m */; };
+		CDADEFB5190FECAD005C558A /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDADEFB4190FECAD005C558A /* AlarmViewController.m */; };
 		CDADEFB7190FECAD005C558A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDADEFB6190FECAD005C558A /* Images.xcassets */; };
 		CDADEFBE190FECAD005C558A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDADEFBD190FECAD005C558A /* XCTest.framework */; };
 		CDADEFBF190FECAD005C558A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDADEF9E190FECAD005C558A /* Foundation.framework */; };
 		CDADEFC0190FECAD005C558A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDADEFA2190FECAD005C558A /* UIKit.framework */; };
 		CDADEFC8190FECAD005C558A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDADEFC6190FECAD005C558A /* InfoPlist.strings */; };
 		CDADEFCA190FECAD005C558A /* ActAlarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDADEFC9190FECAD005C558A /* ActAlarmTests.m */; };
+		CDEAAA4219197C5D00935144 /* AlermListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEAAA4119197C5D00935144 /* AlermListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD722C681926FF900083C23C /* AlarmSettingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmSettingListViewController.h; sourceTree = "<group>"; };
+		CD722C691926FF900083C23C /* AlarmSettingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmSettingListViewController.m; sourceTree = "<group>"; };
+		CD722C6B1926FF9C0083C23C /* AlarmCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmCreateViewController.h; sourceTree = "<group>"; };
+		CD722C6C1926FF9C0083C23C /* AlarmCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmCreateViewController.m; sourceTree = "<group>"; };
 		CDADEF9B190FECAD005C558A /* ActAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDADEF9E190FECAD005C558A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CDADEFA0190FECAD005C558A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +52,16 @@
 		CDADEFAD190FECAD005C558A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CDADEFAE190FECAD005C558A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CDADEFB1190FECAD005C558A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CDADEFB3190FECAD005C558A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CDADEFB4190FECAD005C558A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CDADEFB3190FECAD005C558A /* AlarmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
+		CDADEFB4190FECAD005C558A /* AlarmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
 		CDADEFB6190FECAD005C558A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CDADEFBC190FECAD005C558A /* ActAlarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActAlarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDADEFBD190FECAD005C558A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CDADEFC5190FECAD005C558A /* ActAlarmTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ActAlarmTests-Info.plist"; sourceTree = "<group>"; };
 		CDADEFC7190FECAD005C558A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CDADEFC9190FECAD005C558A /* ActAlarmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActAlarmTests.m; sourceTree = "<group>"; };
+		CDEAAA4019197C5D00935144 /* AlermListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlermListViewController.h; sourceTree = "<group>"; };
+		CDEAAA4119197C5D00935144 /* AlermListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlermListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +124,14 @@
 				CDADEFAD190FECAD005C558A /* AppDelegate.h */,
 				CDADEFAE190FECAD005C558A /* AppDelegate.m */,
 				CDADEFB0190FECAD005C558A /* Main.storyboard */,
-				CDADEFB3190FECAD005C558A /* ViewController.h */,
-				CDADEFB4190FECAD005C558A /* ViewController.m */,
+				CDEAAA4019197C5D00935144 /* AlermListViewController.h */,
+				CDEAAA4119197C5D00935144 /* AlermListViewController.m */,
+				CD722C681926FF900083C23C /* AlarmSettingListViewController.h */,
+				CD722C691926FF900083C23C /* AlarmSettingListViewController.m */,
+				CD722C6B1926FF9C0083C23C /* AlarmCreateViewController.h */,
+				CD722C6C1926FF9C0083C23C /* AlarmCreateViewController.m */,
+				CDADEFB3190FECAD005C558A /* AlarmViewController.h */,
+				CDADEFB4190FECAD005C558A /* AlarmViewController.m */,
 				CDADEFB6190FECAD005C558A /* Images.xcassets */,
 				CDADEFA5190FECAD005C558A /* Supporting Files */,
 			);
@@ -249,9 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDADEFB5190FECAD005C558A /* ViewController.m in Sources */,
+				CDADEFB5190FECAD005C558A /* AlarmViewController.m in Sources */,
 				CDADEFAF190FECAD005C558A /* AppDelegate.m in Sources */,
+				CD722C6D1926FF9C0083C23C /* AlarmCreateViewController.m in Sources */,
+				CD722C6A1926FF900083C23C /* AlarmSettingListViewController.m in Sources */,
 				CDADEFAB190FECAD005C558A /* main.m in Sources */,
+				CDEAAA4219197C5D00935144 /* AlermListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +474,7 @@
 				CDADEFCF190FECAD005C558A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDADEFD0190FECAD005C558A /* Build configuration list for PBXNativeTarget "ActAlarmTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +483,7 @@
 				CDADEFD2190FECAD005C558A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
