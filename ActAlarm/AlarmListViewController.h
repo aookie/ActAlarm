@@ -1,5 +1,5 @@
 //
-//  AlermListViewController.h
+//  AlarmListViewController.h
 //  ActAlarm
 //
 //  Created by Masakazu Aoki on 2014/05/07.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AlermListViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface AlarmListViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

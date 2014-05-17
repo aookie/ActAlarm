@@ -1,19 +1,19 @@
 //
-//  AlermListViewController.m
+//  AlarmListViewController.m
 //  ActAlarm
 //
 //  Created by Masakazu Aoki on 2014/05/07.
 //  Copyright (c) 2014年 externalight. All rights reserved.
 //
 
-#import "AlermListViewController.h"
+#import "AlarmListViewController.h"
 
-@interface AlermListViewController (){
-    __weak IBOutlet UITableView *alermTableView;
+@interface AlarmListViewController (){
+    
 }
 @end
 
-@implementation AlermListViewController
+@implementation AlarmListViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,6 +30,9 @@
     
     [self.tableView setDelegate:self];
     [self.tableView setDataSource:self];
+    
+    
+    
     [self.view addSubview:self.tableView];
 }
 
@@ -43,17 +46,17 @@
 - (void)viewWillAppear:(BOOL)animated {
     // Viewが表示される直前に実行される
     // データのリロード、選択行の解除
-    NSIndexPath* selection = [alermTableView indexPathForSelectedRow];
+    NSIndexPath* selection = [self.tableView indexPathForSelectedRow];
     if(selection){
-        [alermTableView deselectRowAtIndexPath:selection animated:YES];
+        [self.tableView deselectRowAtIndexPath:selection animated:YES];
     }
-    [alermTableView reloadData];
+    [self.tableView reloadData];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     //Viewが表示された直後に実行される
     // スクロールバーの点滅
-    [self->alermTableView flashScrollIndicators];
+    [self.tableView flashScrollIndicators];
 }
 
 /*

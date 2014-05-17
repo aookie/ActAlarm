@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CD722C6A1926FF900083C23C /* AlarmSettingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD722C691926FF900083C23C /* AlarmSettingListViewController.m */; };
 		CD722C6D1926FF9C0083C23C /* AlarmCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD722C6C1926FF9C0083C23C /* AlarmCreateViewController.m */; };
+		CD722C70192736C90083C23C /* AlarmUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = CD722C6F192736C90083C23C /* AlarmUserData.m */; };
+		CD722C73192737CF0083C23C /* AlarmUserDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD722C72192737CF0083C23C /* AlarmUserDataManager.m */; };
 		CDADEF9F190FECAD005C558A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDADEF9E190FECAD005C558A /* Foundation.framework */; };
 		CDADEFA1190FECAD005C558A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDADEFA0190FECAD005C558A /* CoreGraphics.framework */; };
 		CDADEFA3190FECAD005C558A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDADEFA2190FECAD005C558A /* UIKit.framework */; };
@@ -23,7 +25,7 @@
 		CDADEFC0190FECAD005C558A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDADEFA2190FECAD005C558A /* UIKit.framework */; };
 		CDADEFC8190FECAD005C558A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDADEFC6190FECAD005C558A /* InfoPlist.strings */; };
 		CDADEFCA190FECAD005C558A /* ActAlarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDADEFC9190FECAD005C558A /* ActAlarmTests.m */; };
-		CDEAAA4219197C5D00935144 /* AlermListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEAAA4119197C5D00935144 /* AlermListViewController.m */; };
+		CDEAAA4219197C5D00935144 /* AlarmListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEAAA4119197C5D00935144 /* AlarmListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +39,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CD722C681926FF900083C23C /* AlarmSettingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmSettingListViewController.h; sourceTree = "<group>"; };
-		CD722C691926FF900083C23C /* AlarmSettingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmSettingListViewController.m; sourceTree = "<group>"; };
+		CD722C681926FF900083C23C /* AlarmSettingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AlarmSettingListViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CD722C691926FF900083C23C /* AlarmSettingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AlarmSettingListViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		CD722C6B1926FF9C0083C23C /* AlarmCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmCreateViewController.h; sourceTree = "<group>"; };
 		CD722C6C1926FF9C0083C23C /* AlarmCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmCreateViewController.m; sourceTree = "<group>"; };
+		CD722C6E192736C90083C23C /* AlarmUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AlarmUserData.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CD722C6F192736C90083C23C /* AlarmUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AlarmUserData.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CD722C71192737CF0083C23C /* AlarmUserDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AlarmUserDataManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CD722C72192737CF0083C23C /* AlarmUserDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmUserDataManager.m; sourceTree = "<group>"; };
+		CD722C751927A4F60083C23C /* ViewCloseDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewCloseDelegate.h; sourceTree = "<group>"; };
 		CDADEF9B190FECAD005C558A /* ActAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDADEF9E190FECAD005C558A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CDADEFA0190FECAD005C558A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,8 +67,8 @@
 		CDADEFC5190FECAD005C558A /* ActAlarmTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ActAlarmTests-Info.plist"; sourceTree = "<group>"; };
 		CDADEFC7190FECAD005C558A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CDADEFC9190FECAD005C558A /* ActAlarmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActAlarmTests.m; sourceTree = "<group>"; };
-		CDEAAA4019197C5D00935144 /* AlermListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlermListViewController.h; sourceTree = "<group>"; };
-		CDEAAA4119197C5D00935144 /* AlermListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlermListViewController.m; sourceTree = "<group>"; };
+		CDEAAA4019197C5D00935144 /* AlarmListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AlarmListViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CDEAAA4119197C5D00935144 /* AlarmListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AlarmListViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,9 +130,14 @@
 			children = (
 				CDADEFAD190FECAD005C558A /* AppDelegate.h */,
 				CDADEFAE190FECAD005C558A /* AppDelegate.m */,
+				CD722C751927A4F60083C23C /* ViewCloseDelegate.h */,
 				CDADEFB0190FECAD005C558A /* Main.storyboard */,
-				CDEAAA4019197C5D00935144 /* AlermListViewController.h */,
-				CDEAAA4119197C5D00935144 /* AlermListViewController.m */,
+				CD722C6E192736C90083C23C /* AlarmUserData.h */,
+				CD722C6F192736C90083C23C /* AlarmUserData.m */,
+				CD722C71192737CF0083C23C /* AlarmUserDataManager.h */,
+				CD722C72192737CF0083C23C /* AlarmUserDataManager.m */,
+				CDEAAA4019197C5D00935144 /* AlarmListViewController.h */,
+				CDEAAA4119197C5D00935144 /* AlarmListViewController.m */,
 				CD722C681926FF900083C23C /* AlarmSettingListViewController.h */,
 				CD722C691926FF900083C23C /* AlarmSettingListViewController.m */,
 				CD722C6B1926FF9C0083C23C /* AlarmCreateViewController.h */,
@@ -264,12 +276,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD722C70192736C90083C23C /* AlarmUserData.m in Sources */,
 				CDADEFB5190FECAD005C558A /* AlarmViewController.m in Sources */,
 				CDADEFAF190FECAD005C558A /* AppDelegate.m in Sources */,
 				CD722C6D1926FF9C0083C23C /* AlarmCreateViewController.m in Sources */,
 				CD722C6A1926FF900083C23C /* AlarmSettingListViewController.m in Sources */,
 				CDADEFAB190FECAD005C558A /* main.m in Sources */,
-				CDEAAA4219197C5D00935144 /* AlermListViewController.m in Sources */,
+				CD722C73192737CF0083C23C /* AlarmUserDataManager.m in Sources */,
+				CDEAAA4219197C5D00935144 /* AlarmListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

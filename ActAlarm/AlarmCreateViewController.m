@@ -8,7 +8,8 @@
 
 #import "AlarmCreateViewController.h"
 
-@interface AlarmCreateViewController ()
+@interface AlarmCreateViewController (){
+}
 
 @end
 
@@ -26,13 +27,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*
@@ -45,5 +44,40 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)saveActivity:(id)sender {
+    // prepare save data
+    AlarmUserData* userData = [[AlarmUserData alloc] init];
+    
+    // date
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setTimeStyle:NSDateFormatterFullStyle];
+    [formatter setDateFormat:@"HH:mm"];
+
+    // TODO:get strings.
+    userData.date = [formatter dateFromString:@"09:00"];
+    
+    // thing
+    userData.things = self.whatThing.text;
+    
+    // time
+    userData.bestTimer = self.bestTime.text;
+    userData.betterTimer = self.betterTime.text;
+    userData.worseTimer = self.worseTime.text;
+    
+    // save
+    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    [delegate.dataManager appendData:userData];
+    
+    // back to setting view
+    [self.closeViewDelegate didCloseView];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)backToSetting:(id)sender {
+    // back to setting view
+    [self.closeViewDelegate didCloseView];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end
+

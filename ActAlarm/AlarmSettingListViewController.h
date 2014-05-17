@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+#import "ViewCloseDelegate.h"
+#import "AlarmCreateViewController.h"
 
-@interface AlarmSettingListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>{
+@interface AlarmSettingListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, ViewCloseDelegate>{
     
 }
 

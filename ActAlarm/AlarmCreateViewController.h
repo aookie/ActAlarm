@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+#import "ViewCloseDelegate.h"
 
 @interface AlarmCreateViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *whatTime;
+@property (weak, nonatomic) IBOutlet UITextField *whatThing;
+@property (weak, nonatomic) IBOutlet UITextField *bestTime;
+@property (weak, nonatomic) IBOutlet UITextField *betterTime;
+@property (weak, nonatomic) IBOutlet UITextField *worseTime;
+
+@property (strong, nonatomic) id <ViewCloseDelegate> closeViewDelegate;
 
 @end

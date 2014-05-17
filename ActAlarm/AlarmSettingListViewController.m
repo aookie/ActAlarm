@@ -8,7 +8,9 @@
 
 #import "AlarmSettingListViewController.h"
 
-@interface AlarmSettingListViewController ()
+@interface AlarmSettingListViewController (){
+    NSMutableArray* dataArray;
+}
 
 @end
 
@@ -29,6 +31,11 @@
 
     [self.tableView setDelegate:self];
     [self.tableView setDataSource:self];
+
+    // get array
+    AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    dataArray = [delegate.dataManager getData];
+    
     [self.view addSubview:self.tableView];
 }
 
@@ -56,7 +63,7 @@
 }
 //セクションに含まれる行の数
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 50;
+    return dataArray.count;
 }
 //行に表示するデータの生成
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -67,8 +74,34 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
 	
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ %i", @"row", indexPath.row];
+    AlarmUserData* data = [dataArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = data.things;
     return cell;
+}
+
+- (IBAction)backToList:(id)sender {
+    // back to list view
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender {
+    
+    // 対象セグエ以外ならここでリターン
+    if(![[segue identifier] isEqualToString:@"CreateSetting"])
+        return;
+    
+    // 遷移先コントローラを取得
+    AlarmCreateViewController *alarmCreateViewController
+    = (AlarmCreateViewController*)[segue destinationViewController];
+    
+    // 遷移元ポインタを渡しておく
+    alarmCreateViewController.closeViewDelegate = self;
+}
+
+
+#pragma mark - ViewCloseDelegate
+- (void)didCloseView{
+    [self.tableView reloadData];
 }
 
 @end
