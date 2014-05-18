@@ -12,6 +12,12 @@
 
 @interface AlarmCreateViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *timeTextField;
+@property (weak, nonatomic) IBOutlet UITextField *thingsTextField;
+@property (weak, nonatomic) IBOutlet UITextField *bestTimeTextField;
+@property (weak, nonatomic) IBOutlet UITextField *betterTimeTextField;
+@property (weak, nonatomic) IBOutlet UITextField *worseTimeTextField;
+
 @property (weak, nonatomic) IBOutlet UITextField *whatTime;
 @property (weak, nonatomic) IBOutlet UITextField *whatThing;
 @property (weak, nonatomic) IBOutlet UITextField *bestTime;

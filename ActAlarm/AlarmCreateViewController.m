@@ -44,7 +44,55 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 - (IBAction)saveActivity:(id)sender {
+    // check input
+    if([self.timeTextField.text length] == 0){
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error"
+                                                       message:@"Input time"
+                                                      delegate:self
+                                             cancelButtonTitle:@"OK"
+                                             otherButtonTitles:nil,nil];
+        [alert show];
+        return;
+    }
+    if([self.thingsTextField.text length] == 0){
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error"
+                                                       message:@"Input things"
+                                                      delegate:self
+                                             cancelButtonTitle:@"OK"
+                                             otherButtonTitles:nil,nil];
+        [alert show];
+        return;
+    }
+    if([self.bestTimeTextField.text length] == 0){
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error"
+                                                       message:@"Input best time"
+                                                      delegate:self
+                                             cancelButtonTitle:@"OK"
+                                             otherButtonTitles:nil,nil];
+        [alert show];
+        return;
+    }
+    if([self.betterTimeTextField.text length] == 0){
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error"
+                                                       message:@"Input better time"
+                                                      delegate:self
+                                             cancelButtonTitle:@"OK"
+                                             otherButtonTitles:nil,nil];
+        [alert show];
+        return;
+    }
+    if([self.worseTimeTextField.text length] == 0){
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error"
+                                                       message:@"Input worse time"
+                                                      delegate:self
+                                             cancelButtonTitle:@"OK"
+                                             otherButtonTitles:nil,nil];
+        [alert show];
+        return;
+    }
+
     // prepare save data
     AlarmUserData* userData = [[AlarmUserData alloc] init];
     

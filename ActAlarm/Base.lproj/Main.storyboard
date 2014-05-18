@@ -50,7 +50,6 @@
         <!--Alarm List View Controller-->
         <scene sceneID="Lw0-y5-v8h">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mhN-25-Wkl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="zLp-Gq-4GG" customClass="AlarmListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q3S-zE-PND"/>
@@ -85,6 +84,7 @@
                         <outlet property="tableView" destination="nUQ-w0-b4H" id="EEq-2e-AlJ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhN-25-Wkl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="940" y="82"/>
         </scene>
@@ -244,10 +244,15 @@
                     </view>
                     <connections>
                         <outlet property="bestTime" destination="3HD-td-U0L" id="kdB-a4-LkH"/>
+                        <outlet property="bestTimeTextField" destination="3HD-td-U0L" id="E8c-bl-4bI"/>
                         <outlet property="betterTime" destination="ekd-Jx-bbb" id="5b0-Jh-Xf2"/>
+                        <outlet property="betterTimeTextField" destination="ekd-Jx-bbb" id="WZH-Cg-7f6"/>
+                        <outlet property="thingsTextField" destination="jU4-wF-JAP" id="6n9-1p-VUC"/>
+                        <outlet property="timeTextField" destination="jCg-ze-xIT" id="bNc-xF-eMN"/>
                         <outlet property="whatThing" destination="jU4-wF-JAP" id="0fS-Zb-pHW"/>
                         <outlet property="whatTime" destination="jCg-ze-xIT" id="GSs-CX-Ij2"/>
                         <outlet property="worseTime" destination="5tb-fO-arf" id="uwr-II-lkJ"/>
+                        <outlet property="worseTimeTextField" destination="5tb-fO-arf" id="zmA-dJ-30I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CsU-4a-DO0" userLabel="First Responder" sceneMemberID="firstResponder"/>

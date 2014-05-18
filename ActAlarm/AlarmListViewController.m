@@ -31,8 +31,6 @@
     [self.tableView setDelegate:self];
     [self.tableView setDataSource:self];
     
-    
-    
     [self.view addSubview:self.tableView];
 }
 
