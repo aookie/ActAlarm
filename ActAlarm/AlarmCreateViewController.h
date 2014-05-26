@@ -10,20 +10,18 @@
 #import "AppDelegate.h"
 #import "ViewCloseDelegate.h"
 
-@interface AlarmCreateViewController : UIViewController
+@interface AlarmCreateViewController : UIViewController <UITextFieldDelegate>
 
+#pragma mark - delegate
+@property (strong, nonatomic) id <ViewCloseDelegate> closeViewDelegate;
+
+#pragma mark - property
 @property (weak, nonatomic) IBOutlet UITextField *timeTextField;
 @property (weak, nonatomic) IBOutlet UITextField *thingsTextField;
 @property (weak, nonatomic) IBOutlet UITextField *bestTimeTextField;
 @property (weak, nonatomic) IBOutlet UITextField *betterTimeTextField;
 @property (weak, nonatomic) IBOutlet UITextField *worseTimeTextField;
 
-@property (weak, nonatomic) IBOutlet UITextField *whatTime;
-@property (weak, nonatomic) IBOutlet UITextField *whatThing;
-@property (weak, nonatomic) IBOutlet UITextField *bestTime;
-@property (weak, nonatomic) IBOutlet UITextField *betterTime;
-@property (weak, nonatomic) IBOutlet UITextField *worseTime;
-
-@property (strong, nonatomic) id <ViewCloseDelegate> closeViewDelegate;
+@property (strong, nonatomic) IBOutlet UIView *createView;
 
 @end

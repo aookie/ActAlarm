@@ -189,13 +189,13 @@
                                 <rect key="frame" x="40" y="115" width="241" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jU4-wF-JAP">
                                 <rect key="frame" x="40" y="201" width="241" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer counts:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiA-RN-Fa6">
                                 <rect key="frame" x="26" y="249" width="159" height="21"/>
@@ -207,19 +207,19 @@
                                 <rect key="frame" x="152" y="278" width="123" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ekd-Jx-bbb">
                                 <rect key="frame" x="152" y="316" width="123" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5tb-fO-arf">
                                 <rect key="frame" x="152" y="354" width="123" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Best" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owv-8H-WfR">
                                 <rect key="frame" x="85" y="282" width="44" height="21"/>
@@ -243,15 +243,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="bestTime" destination="3HD-td-U0L" id="kdB-a4-LkH"/>
                         <outlet property="bestTimeTextField" destination="3HD-td-U0L" id="E8c-bl-4bI"/>
-                        <outlet property="betterTime" destination="ekd-Jx-bbb" id="5b0-Jh-Xf2"/>
                         <outlet property="betterTimeTextField" destination="ekd-Jx-bbb" id="WZH-Cg-7f6"/>
+                        <outlet property="createView" destination="u7o-BS-A9a" id="6ZD-0K-yvU"/>
                         <outlet property="thingsTextField" destination="jU4-wF-JAP" id="6n9-1p-VUC"/>
                         <outlet property="timeTextField" destination="jCg-ze-xIT" id="bNc-xF-eMN"/>
-                        <outlet property="whatThing" destination="jU4-wF-JAP" id="0fS-Zb-pHW"/>
-                        <outlet property="whatTime" destination="jCg-ze-xIT" id="GSs-CX-Ij2"/>
-                        <outlet property="worseTime" destination="5tb-fO-arf" id="uwr-II-lkJ"/>
                         <outlet property="worseTimeTextField" destination="5tb-fO-arf" id="zmA-dJ-30I"/>
                     </connections>
                 </viewController>

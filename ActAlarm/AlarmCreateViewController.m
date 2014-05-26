@@ -9,6 +9,7 @@
 #import "AlarmCreateViewController.h"
 
 @interface AlarmCreateViewController (){
+    CGRect orgRect;
 }
 
 @end
@@ -27,6 +28,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.thingsTextField.delegate = self;
+    self.timeTextField.delegate = self;
+    self.bestTimeTextField.delegate = self;
+    self.betterTimeTextField.delegate = self;
+    self.worseTimeTextField.delegate = self;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(respondToKeyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(respondToKeyboardWillHide:)
+                                                 name:UIKeyboardWillHideNotification
+                                               object:nil];
+    
+    orgRect = self.createView.frame;
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,6 +62,54 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - UITextField Delegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return NO;
+}
+
+#pragma mark - UITextField Show/Hide Notification
+- (void)respondToKeyboardWillShow:(NSNotification *)ns {
+    
+    NSDictionary *dic = [ns userInfo];
+    
+    //アニメーション終了時のキーボードのCGRect
+    CGRect keyboardRect = [[dic objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    
+    //アニメーションにかかる時間
+    NSTimeInterval duration = [[dic objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    
+    //アニメーションのタイプ
+    UIViewAnimationCurve curve  = [[dic objectForKey:UIKeyboardAnimationCurveUserInfoKey] integerValue];
+    
+    void (^animations)(void);
+    animations = ^(void) {
+        self.createView.frame = CGRectMake(self.createView.frame.origin.x,
+                                           self.createView.frame.origin.y - keyboardRect.size.height,
+                                           self.createView.frame.size.width,
+                                           self.createView.frame.size.height);
+    };
+    
+    [UIView animateWithDuration:duration
+                          delay:0.0f
+                        options:(curve << 16)
+                     animations:animations
+                     completion:nil];
+}
+
+- (void)respondToKeyboardWillHide:(NSNotification *)ns {
+    
+    void (^animations)(void);
+    animations = ^(void) {
+        self.createView.frame = CGRectMake(orgRect.origin.x,
+                                           orgRect.origin.y,
+                                           orgRect.size.width,
+                                           orgRect.size.height);
+    };
+}
+
 
 - (IBAction)saveActivity:(id)sender {
     // check input
@@ -105,12 +171,12 @@
     userData.date = [formatter dateFromString:@"09:00"];
     
     // thing
-    userData.things = self.whatThing.text;
+    userData.things = self.thingsTextField.text;
     
     // time
-    userData.bestTimer = self.bestTime.text;
-    userData.betterTimer = self.betterTime.text;
-    userData.worseTimer = self.worseTime.text;
+    userData.bestTimer = self.bestTimeTextField.text;
+    userData.betterTimer = self.betterTimeTextField.text;
+    userData.worseTimer = self.worseTimeTextField.text;
     
     // save
     AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
