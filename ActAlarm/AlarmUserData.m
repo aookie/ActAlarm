@@ -11,11 +11,12 @@
 @implementation AlarmUserData
 
 - (void)encodeWithCoder:(NSCoder*)coder {
-	[coder encodeObject:self.date forKey:@"DATE"];
+	[coder encodeObject:self.date forKey:@"DATE"] ;
 	[coder encodeObject:self.things forKey:@"THINGS"] ;
 	[coder encodeObject:self.bestTimer forKey:@"BESTTIMER"] ;
 	[coder encodeObject:self.betterTimer forKey:@"BETTERTIMER"] ;
 	[coder encodeObject:self.worseTimer forKey:@"WORSETIMER"] ;
+	[coder encodeBool:self.enabled forKey:@"ENABLED"] ;
 }
 
 - (id)initWithCoder:(NSCoder*)coder {
@@ -24,7 +25,19 @@
 	self.bestTimer = [coder decodeObjectForKey:@"BESTTIMER"];
 	self.betterTimer = [coder decodeObjectForKey:@"BETTERTIMER"];
 	self.worseTimer = [coder decodeObjectForKey:@"WORSETIMER"];
+	self.enabled = [coder decodeBoolForKey:@"ENABLED"];
 	return self;
 }
+
+- (NSString*) getDateString{
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]];
+    [df setDateFormat:@"HH:mm"];
+    
+    NSString *dateStr = [df stringFromDate:self.date];
+    
+    return dateStr;
+}
+
 
 @end

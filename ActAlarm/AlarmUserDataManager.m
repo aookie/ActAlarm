@@ -20,7 +20,8 @@
 		defaults =  [NSUserDefaults standardUserDefaults];
 
         // load userDefault
-        userDataArray = (NSMutableArray *)[defaults arrayForKey:@"dataArray"];
+        NSData* userDataLoad = [defaults dataForKey:@"dataArray"];
+        userDataArray = (NSMutableArray*)[NSKeyedUnarchiver unarchiveObjectWithData:userDataLoad];
         if(!userDataArray){
             userDataArray = [[NSMutableArray alloc]init];
             [self updateUserDefault];
@@ -66,7 +67,7 @@
     // save userDefault
     NSData* userDataSave = [NSKeyedArchiver archivedDataWithRootObject:userDataArray];
     [defaults setObject:userDataSave forKey:@"dataArray"];
-    
+
     // synchronize
     if ( ![defaults synchronize] ) {
         NSLog( @"failed ..." );
