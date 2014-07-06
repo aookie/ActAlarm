@@ -10,10 +10,18 @@
 #import "AppDelegate.h"
 #import "ViewCloseDelegate.h"
 #import "AlarmCreateViewController.h"
+#import "AlarmSettingListViewCell.h"
 
-@interface AlarmSettingListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, ViewCloseDelegate>{
-    
+@interface AlarmSettingListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, ViewCloseDelegate, UIGestureRecognizerDelegate, UIActionSheetDelegate>{
 }
+
+enum KKAlarmSettingState{
+    KKAlarmSettingInit = 0,
+    KKAlarmSettingShowList,
+    KKAlarmSettingShowActionSheet,
+    KKAlarmSettingShowAlert
+};
+
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

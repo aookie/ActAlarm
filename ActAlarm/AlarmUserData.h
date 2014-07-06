@@ -15,6 +15,7 @@
 @property (nonatomic,strong) NSString* bestTimer;
 @property (nonatomic,strong) NSString* betterTimer;
 @property (nonatomic,strong) NSString* worseTimer;
+@property (nonatomic,assign) BOOL enabled;
 
 // method
 - (NSString*) getDateString;

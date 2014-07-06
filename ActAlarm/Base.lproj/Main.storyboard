@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="zLp-Gq-4GG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="zLp-Gq-4GG">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Alarm View Controller-->
@@ -131,7 +131,7 @@
         <!--Alarm Create View Controller-->
         <scene sceneID="wpl-wh-qwj">
             <objects>
-                <viewController id="Pds-cS-Dvu" customClass="AlarmCreateViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateSetting" id="Pds-cS-Dvu" customClass="AlarmCreateViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RlY-ej-xg5"/>
                         <viewControllerLayoutGuide type="bottom" id="ii6-SY-MRH"/>
