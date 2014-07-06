@@ -16,4 +16,7 @@
 @property (nonatomic,strong) NSString* betterTimer;
 @property (nonatomic,strong) NSString* worseTimer;
 
+// method
+- (NSString*) getDateString;
+
 @end

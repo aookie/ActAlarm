@@ -7,6 +7,7 @@
 //
 
 #import "AlarmSettingListViewController.h"
+#import "AlarmSettingListViewCell.h"
 
 @interface AlarmSettingListViewController (){
     NSMutableArray* dataArray;
@@ -32,6 +33,8 @@
     [self.tableView setDelegate:self];
     [self.tableView setDataSource:self];
 
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([AlarmSettingListViewCell class]) bundle:nil]forCellReuseIdentifier:@"cell"];
+    
     // get array
     AppDelegate *delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     dataArray = [delegate.dataManager getData];
@@ -67,15 +70,19 @@
 }
 //行に表示するデータの生成
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+/*
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-	
+*/
     AlarmUserData* data = [dataArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = data.things;
+
+    AlarmSettingListViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"cell"];
+    cell.time.text = [data getDateString];
+    cell.title.text = data.things;
     return cell;
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11767B0719690B830064B28B /* AlarmSettingListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11767B0619690B830064B28B /* AlarmSettingListViewCell.m */; };
+		11767B0919690BAF0064B28B /* AlarmSettingListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11767B0819690BAF0064B28B /* AlarmSettingListViewCell.xib */; };
 		CD722C6A1926FF900083C23C /* AlarmSettingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD722C691926FF900083C23C /* AlarmSettingListViewController.m */; };
 		CD722C6D1926FF9C0083C23C /* AlarmCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD722C6C1926FF9C0083C23C /* AlarmCreateViewController.m */; };
 		CD722C70192736C90083C23C /* AlarmUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = CD722C6F192736C90083C23C /* AlarmUserData.m */; };
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11767B0519690B830064B28B /* AlarmSettingListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmSettingListViewCell.h; sourceTree = "<group>"; };
+		11767B0619690B830064B28B /* AlarmSettingListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmSettingListViewCell.m; sourceTree = "<group>"; };
+		11767B0819690BAF0064B28B /* AlarmSettingListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmSettingListViewCell.xib; sourceTree = "<group>"; };
 		CD722C681926FF900083C23C /* AlarmSettingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AlarmSettingListViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		CD722C691926FF900083C23C /* AlarmSettingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AlarmSettingListViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		CD722C6B1926FF9C0083C23C /* AlarmCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmCreateViewController.h; sourceTree = "<group>"; };
@@ -95,6 +100,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		118BC6CF19531AD200424FE9 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 		CDADEF92190FECAD005C558A = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +140,7 @@
 		CDADEFA4190FECAD005C558A /* ActAlarm */ = {
 			isa = PBXGroup;
 			children = (
+				118BC6CF19531AD200424FE9 /* iPad */,
 				CDADEFAD190FECAD005C558A /* AppDelegate.h */,
 				CDADEFAE190FECAD005C558A /* AppDelegate.m */,
 				CD722C751927A4F60083C23C /* ViewCloseDelegate.h */,
@@ -138,6 +151,8 @@
 				CD722C72192737CF0083C23C /* AlarmUserDataManager.m */,
 				CDEAAA4019197C5D00935144 /* AlarmListViewController.h */,
 				CDEAAA4119197C5D00935144 /* AlarmListViewController.m */,
+				11767B0519690B830064B28B /* AlarmSettingListViewCell.h */,
+				11767B0619690B830064B28B /* AlarmSettingListViewCell.m */,
 				CD722C681926FF900083C23C /* AlarmSettingListViewController.h */,
 				CD722C691926FF900083C23C /* AlarmSettingListViewController.m */,
 				CD722C6B1926FF9C0083C23C /* AlarmCreateViewController.h */,
@@ -146,6 +161,7 @@
 				CDADEFB4190FECAD005C558A /* AlarmViewController.m */,
 				CDADEFB6190FECAD005C558A /* Images.xcassets */,
 				CDADEFA5190FECAD005C558A /* Supporting Files */,
+				11767B0819690BAF0064B28B /* AlarmSettingListViewCell.xib */,
 			);
 			path = ActAlarm;
 			sourceTree = "<group>";
@@ -226,6 +242,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = externalight;
 				TargetAttributes = {
+					CDADEF9A190FECAD005C558A = {
+						DevelopmentTeam = 2W6QK8J3CU;
+					};
 					CDADEFBB190FECAD005C558A = {
 						TestTargetID = CDADEF9A190FECAD005C558A;
 					};
@@ -258,6 +277,7 @@
 				CDADEFB7190FECAD005C558A /* Images.xcassets in Resources */,
 				CDADEFA9190FECAD005C558A /* InfoPlist.strings in Resources */,
 				CDADEFB2190FECAD005C558A /* Main.storyboard in Resources */,
+				11767B0919690BAF0064B28B /* AlarmSettingListViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +301,7 @@
 				CDADEFAF190FECAD005C558A /* AppDelegate.m in Sources */,
 				CD722C6D1926FF9C0083C23C /* AlarmCreateViewController.m in Sources */,
 				CD722C6A1926FF900083C23C /* AlarmSettingListViewController.m in Sources */,
+				11767B0719690B830064B28B /* AlarmSettingListViewCell.m in Sources */,
 				CDADEFAB190FECAD005C558A /* main.m in Sources */,
 				CD722C73192737CF0083C23C /* AlarmUserDataManager.m in Sources */,
 				CDEAAA4219197C5D00935144 /* AlarmListViewController.m in Sources */,
@@ -408,10 +429,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ActAlarm/ActAlarm-Prefix.pch";
 				INFOPLIST_FILE = "ActAlarm/ActAlarm-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -421,10 +445,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ActAlarm/ActAlarm-Prefix.pch";
 				INFOPLIST_FILE = "ActAlarm/ActAlarm-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

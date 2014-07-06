@@ -27,4 +27,15 @@
 	return self;
 }
 
+- (NSString*) getDateString{
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"ja_JP"]];
+    [df setDateFormat:@"HH:mm"];
+    
+    NSString *dateStr = [df stringFromDate:self.date];
+    
+    return dateStr;
+}
+
+
 @end
