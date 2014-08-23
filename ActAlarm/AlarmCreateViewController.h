@@ -24,4 +24,9 @@
 
 @property (strong, nonatomic) IBOutlet UIView *createView;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIView *contentsView;
+
+@property (strong ,nonatomic) UITextField *activeTextField;
+
 @end

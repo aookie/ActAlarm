@@ -9,7 +9,6 @@
 #import "AlarmCreateViewController.h"
 
 @interface AlarmCreateViewController (){
-    CGRect orgRect;
 }
 
 @end
@@ -35,16 +34,29 @@
     self.betterTimeTextField.delegate = self;
     self.worseTimeTextField.delegate = self;
     
+    // set the view scroll size
+    [_scrollView setContentSize:_contentsView.frame.size];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    //キーボード表示・非表示の通知の開始
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(respondToKeyboardWillShow:)
+                                             selector:@selector(keyboardWillShow:)
                                                  name:UIKeyboardWillShowNotification
                                                object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(respondToKeyboardWillHide:)
+                                             selector:@selector(keyboardWillHide:)
                                                  name:UIKeyboardWillHideNotification
                                                object:nil];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
     
-    orgRect = self.createView.frame;
+    //キーボード表示・非表示の通知を終了
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -71,43 +83,27 @@
 }
 
 #pragma mark - UITextField Show/Hide Notification
-- (void)respondToKeyboardWillShow:(NSNotification *)ns {
+- (void)keyboardWillShow:(NSNotification *)ns {
     
-    NSDictionary *dic = [ns userInfo];
+    // キーボードのCGRect
+    CGRect keyboardRect = [[[ns userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
     
-    //アニメーション終了時のキーボードのCGRect
-    CGRect keyboardRect = [[dic objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardRect.size.height, 0.0);
+    self.scrollView.contentInset = contentInsets;
+    self.scrollView.scrollIndicatorInsets = contentInsets;
     
-    //アニメーションにかかる時間
-    NSTimeInterval duration = [[dic objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
-    
-    //アニメーションのタイプ
-    UIViewAnimationCurve curve  = [[dic objectForKey:UIKeyboardAnimationCurveUserInfoKey] integerValue];
-    
-    void (^animations)(void);
-    animations = ^(void) {
-        self.createView.frame = CGRectMake(self.createView.frame.origin.x,
-                                           self.createView.frame.origin.y - keyboardRect.size.height,
-                                           self.createView.frame.size.width,
-                                           self.createView.frame.size.height);
-    };
-    
-    [UIView animateWithDuration:duration
-                          delay:0.0f
-                        options:(curve << 16)
-                     animations:animations
-                     completion:nil];
+    CGRect aRect = self.view.frame;
+    aRect.size.height -= keyboardRect.size.height;
+    if (_activeTextField != nil) {
+        CGPoint scrollPoint = CGPointMake(0.0, _activeTextField.frame.origin.y - 30);
+        [self.scrollView setContentOffset:scrollPoint animated:YES];
+    }
 }
 
-- (void)respondToKeyboardWillHide:(NSNotification *)ns {
-    
-    void (^animations)(void);
-    animations = ^(void) {
-        self.createView.frame = CGRectMake(orgRect.origin.x,
-                                           orgRect.origin.y,
-                                           orgRect.size.width,
-                                           orgRect.size.height);
-    };
+- (void)keyboardWillHide:(NSNotification *)ns {
+    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
+    self.scrollView.contentInset = contentInsets;
+    self.scrollView.scrollIndicatorInsets = contentInsets;
 }
 
 
@@ -191,6 +187,14 @@
     // back to setting view
     [self.closeViewDelegate didCloseView];
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    _activeTextField = textField;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    _activeTextField = nil;
 }
 
 @end
