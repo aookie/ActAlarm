@@ -9,6 +9,7 @@
 #import "AlarmCreateViewController.h"
 
 @interface AlarmCreateViewController (){
+    bool inputResize;
 }
 
 @end
@@ -88,6 +89,14 @@
     // キーボードのCGRect
     CGRect keyboardRect = [[[ns userInfo] objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
     
+    if( inputResize )
+    {
+        // オフセット設定済みの場合は何もしない
+        return;
+    }
+    
+    inputResize = true;
+    
     UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardRect.size.height, 0.0);
     self.scrollView.contentInset = contentInsets;
     self.scrollView.scrollIndicatorInsets = contentInsets;
@@ -104,6 +113,7 @@
     UIEdgeInsets contentInsets = UIEdgeInsetsZero;
     self.scrollView.contentInset = contentInsets;
     self.scrollView.scrollIndicatorInsets = contentInsets;
+    inputResize = false;
 }
 
 
@@ -196,6 +206,23 @@
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     _activeTextField = nil;
 }
+
+- (IBAction)testClicked:(id)sender {
+    // インスタンス生成
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    // 5s後に通知をする
+    notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:(5)];
+    // タイムゾーンの設定
+    notification.timeZone = [NSTimeZone defaultTimeZone];
+    // 通知時に表示させるメッセージ内容
+    notification.alertBody = @"5s経ちました";
+    // 通知に鳴る音の設定
+    notification.soundName = UILocalNotificationDefaultSoundName;
+    
+    // 通知の登録
+    [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+}
+
 
 @end
 

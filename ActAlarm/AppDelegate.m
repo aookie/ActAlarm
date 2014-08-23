@@ -14,6 +14,18 @@
 {
     // Override point for customization after application launch.
     self.dataManager = [[AlarmUserDataManager alloc]init];
+    
+    // for notification
+    NSString* viewIdentifier = @"AlarmView";
+    UIStoryboard* sb = [[[self window] rootViewController] storyboard];
+    UIViewController* vc = [[UIViewController alloc] init];
+    vc = [sb instantiateViewControllerWithIdentifier:viewIdentifier];
+
+    UILocalNotification *localNotif = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    if (localNotif) {
+        application.applicationIconBadgeNumber = localNotif.applicationIconBadgeNumber - 1;
+    }
+    
     return YES;
 }
 							
@@ -42,6 +54,23 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    // on foreground
+    if(application.applicationState == UIApplicationStateActive) {
+        // ここに処理を書く
+        
+    }
+    
+    // on background
+    if(application.applicationState == UIApplicationStateInactive) {
+        // ここに処理を書く
+    }
+    
+    // delete notification
+    [[UIApplication sharedApplication] cancelLocalNotification:notification];
 }
 
 @end
