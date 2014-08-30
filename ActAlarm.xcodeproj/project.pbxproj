@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111933A319B1BD7700C6CD07 /* AlarmActionResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111933A219B1BD7700C6CD07 /* AlarmActionResultViewController.m */; };
 		11767B0719690B830064B28B /* AlarmSettingListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11767B0619690B830064B28B /* AlarmSettingListViewCell.m */; };
 		11767B0919690BAF0064B28B /* AlarmSettingListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11767B0819690BAF0064B28B /* AlarmSettingListViewCell.xib */; };
 		CD722C6A1926FF900083C23C /* AlarmSettingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD722C691926FF900083C23C /* AlarmSettingListViewController.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		111933A119B1BD7700C6CD07 /* AlarmActionResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmActionResultViewController.h; sourceTree = "<group>"; };
+		111933A219B1BD7700C6CD07 /* AlarmActionResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmActionResultViewController.m; sourceTree = "<group>"; };
 		11767B0519690B830064B28B /* AlarmSettingListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmSettingListViewCell.h; sourceTree = "<group>"; };
 		11767B0619690B830064B28B /* AlarmSettingListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmSettingListViewCell.m; sourceTree = "<group>"; };
 		11767B0819690BAF0064B28B /* AlarmSettingListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmSettingListViewCell.xib; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				CD722C6C1926FF9C0083C23C /* AlarmCreateViewController.m */,
 				CDADEFB3190FECAD005C558A /* AlarmViewController.h */,
 				CDADEFB4190FECAD005C558A /* AlarmViewController.m */,
+				111933A119B1BD7700C6CD07 /* AlarmActionResultViewController.h */,
+				111933A219B1BD7700C6CD07 /* AlarmActionResultViewController.m */,
 				CDADEFB6190FECAD005C558A /* Images.xcassets */,
 				CDADEFA5190FECAD005C558A /* Supporting Files */,
 				11767B0819690BAF0064B28B /* AlarmSettingListViewCell.xib */,
@@ -297,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD722C70192736C90083C23C /* AlarmUserData.m in Sources */,
+				111933A319B1BD7700C6CD07 /* AlarmActionResultViewController.m in Sources */,
 				CDADEFB5190FECAD005C558A /* AlarmViewController.m in Sources */,
 				CDADEFAF190FECAD005C558A /* AppDelegate.m in Sources */,
 				CD722C6D1926FF9C0083C23C /* AlarmCreateViewController.m in Sources */,

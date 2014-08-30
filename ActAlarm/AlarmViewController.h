@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AlarmViewController : UIViewController
+@interface AlarmViewController : UIViewController{
+    
+    // progress timer
+    NSTimer *timeTicker;
+}
+
+@property (weak, nonatomic) IBOutlet UIImageView *stopImage;
+@property (weak, nonatomic) IBOutlet UILabel *todo;
+@property (weak, nonatomic) IBOutlet UILabel *progressTime;
+
+-(void)updateTimer;
 
 @end

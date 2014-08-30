@@ -13,6 +13,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
     self.dataManager = [[AlarmUserDataManager alloc]init];
     
     // for notification
@@ -62,6 +63,11 @@
     if(application.applicationState == UIApplicationStateActive) {
         // ここに処理を書く
         
+        // view切り替え
+        UIStoryboard* sb = [[[self window] rootViewController] storyboard];
+        AlarmViewController *alarmViewController =[sb instantiateViewControllerWithIdentifier:@"AlarmView"];
+        self.window.rootViewController = alarmViewController;
+        [self.window makeKeyAndVisible];
     }
     
     // on background
